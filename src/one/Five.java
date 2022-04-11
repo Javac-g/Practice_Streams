@@ -1,4 +1,4 @@
-package P_04_11_22;
+package one;
 
 import java.io.PrintWriter;
 

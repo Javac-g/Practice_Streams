@@ -1,9 +1,7 @@
-package P_04_11_22;
+package one;
 
-import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class Six {
 
