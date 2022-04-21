@@ -13,6 +13,7 @@ public class FIve {
         FileOutputStream f3 = null;
         String source = " hello its my default bytes test String";
         byte[] b = source.getBytes();
+        System.out.println(b.length);
         try{
              f1 = new FileOutputStream("C:\\Users\\Max.000\\IdeaProjects\\Practice_Streams\\src\\three\\one.txt");
              f2 = new FileOutputStream("C:\\Users\\Max.000\\IdeaProjects\\Practice_Streams\\src\\three\\two.txt");
