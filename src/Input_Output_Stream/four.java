@@ -1,4 +1,4 @@
-package three;
+package Input_Output_Stream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;

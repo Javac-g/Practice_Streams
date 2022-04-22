@@ -1,4 +1,4 @@
-package three;
+package ByteArray_IO;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
