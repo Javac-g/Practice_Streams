@@ -10,6 +10,26 @@ public class One {
         File f = new File(path+name);
         System.out.println(f.exists());
 
+        File dir = new File(path);
+        if(dir.isDirectory()){
+            System.out.println("Catalog: " + dir);
+            String[] s = dir.list();
+
+            for (int i = 0; i < s.length; i++){
+                File file = new File(s[i]);
+                if(file.isDirectory()){
+                    System.out.println("Catalog: " + s[i] );
+                }else {
+                    System.out.println("File: + " +  s[i]);
+                }
+            }
+
+
+
+
+        }else {
+            System.out.println("Not  catalog: " + dir);
+        }
 
 
 
