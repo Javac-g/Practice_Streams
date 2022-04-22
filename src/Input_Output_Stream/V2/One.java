@@ -21,6 +21,7 @@ public class One {
             C = new  FileOutputStream(path + "C" + name);
 
             for(int i =0 ; i < b.length;i++){
+
                 A.write(b,0,10);
                 B.write(b,10,10);
                 C.write(b[i]);
