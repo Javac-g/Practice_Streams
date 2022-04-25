@@ -7,7 +7,7 @@ public class four {
     public static void main(String...args) throws FileNotFoundException {
         int size;
 
-        try(FileInputStream F = new FileInputStream("C:\\Users\\Max.000\\IdeaProjects\\Practice_Streams\\src\\three\\four.java")){
+        try(FileInputStream F = new FileInputStream("C:\\Users\\Max.000\\IdeaProjects\\Practice_Streams\\src\\Input_Output_Stream\\V1\\four.java")){
             size =  F.available();
 
             int n = size/40;
@@ -22,7 +22,7 @@ public class four {
             if(F.read(b) != n){
                 System.err.println("Cant read: " + n + " bytes");
             }
-            System.out.println(new String(b,0,n));
+            System.out.println("???? " + new String(b,0,n));
             System.out.println("\nStill available: "  + F.available());
             System.out.println("Skip last half bytes: " + F.skip(F.available()/2));
             System.out.println("\nStill available: "  + F.available());
