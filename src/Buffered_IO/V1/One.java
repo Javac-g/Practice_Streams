@@ -17,7 +17,7 @@ public class One {
                 switch (c){
                     default -> {
                         if(!marked){
-                            System.out.println((char) c);
+                            System.out.print((char) c);
                             break;
                         }
 
@@ -33,11 +33,11 @@ public class One {
                     case ';' ->{
                         if(marked){
                             marked = false;
-                            System.out.println("(c)");
+                            System.out.print("(c)");
                             break;
 
                         }else {
-                            System.out.println((char) c);
+                            System.out.print((char) c);
                             break;
                         }
                     }
@@ -45,9 +45,9 @@ public class One {
                         if(marked){
                             marked = false;
                             f.reset();
-                            System.out.println("&");
+                            System.out.print("&");
                         }else {
-                            System.out.println((char)c);
+                            System.out.print((char)c);
                             break;
                         }
                     }

@@ -1,0 +1,3 @@
+hello its my practice text file
+my name is max
+i am junior java developer
