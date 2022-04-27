@@ -3,8 +3,10 @@ package File.V4;
 import java.io.File;
 
 public class One {
+
     public static void main(String...args){
-        String s ="C:\\Users\\Max.000\\IdeaProjects\\Practice_Streams\\src\\File\\";
+
+        String s ="C:\\Users\\Max.000\\IdeaProjects\\Practice_Streams\\src";
 
         File fold = new File(s);
 
