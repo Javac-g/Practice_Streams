@@ -14,7 +14,7 @@ public class One {
 
             for(int i = 0 ; i < s.length; i++){
 
-                File f = new File(s[i]);
+                File f = new File(dir + "/" + s[i]);
                 if(f.isDirectory()){
                     System.out.println("Catalog: " + s[i]);
                 }else{
