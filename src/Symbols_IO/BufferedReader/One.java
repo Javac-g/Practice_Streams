@@ -13,14 +13,14 @@ public class One {
         s.getChars(0,s.length(),c,0);
 
         CharArrayReader charArrayReader = new CharArrayReader(c);
-        int c;
+        int t;
         boolean marked = false;
 
         try(BufferedReader bufferedReader = new BufferedReader(charArrayReader)){
 
-            while ((c = bufferedReader.read()) != -1){
+            while ((t = bufferedReader.read()) != -1){
 
-                switch (c){
+                switch (t){
                     case 'e' -> {
 
                         if(!marked){
@@ -38,7 +38,7 @@ public class One {
                             marked = false;
                             System.out.print(" (c) ");
                         }else {
-                            System.out.print((char) c);
+                            System.out.print((char) t);
                         }
                         break;
 
@@ -51,14 +51,14 @@ public class One {
                             bufferedReader.reset();
                             System.out.print("@");
                         }else {
-                            System.out.print((char)c);
+                            System.out.print((char)t);
                         }
                         break;
 
                     }
                     default -> {
                         if(!marked){
-                            System.out.println((char) c);
+                            System.out.println((char) t);
                             break;
                         }
                     }
@@ -70,7 +70,11 @@ public class One {
 
 
 
-        }catch (IOException e)
+        }catch (IOException e){
+
+            e.printStackTrace();
+
+        }
 
 
 
