@@ -2,6 +2,7 @@ package Symbols_IO.BufferedReader;
 
 import java.io.BufferedReader;
 import java.io.CharArrayReader;
+import java.io.IOException;
 
 public class One {
 
@@ -43,6 +44,24 @@ public class One {
 
 
                     }
+                    case ' ' -> {
+
+                        if(marked){
+                            marked = false;
+                            bufferedReader.reset();
+                            System.out.print("@");
+                        }else {
+                            System.out.print((char)c);
+                        }
+                        break;
+
+                    }
+                    default -> {
+                        if(!marked){
+                            System.out.println((char) c);
+                            break;
+                        }
+                    }
 
                 }
 
@@ -51,7 +70,7 @@ public class One {
 
 
 
-        }
+        }catch (IOException e)
 
 
 
