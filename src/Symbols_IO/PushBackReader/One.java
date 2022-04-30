@@ -22,6 +22,7 @@ public class One {
 
                 switch (o){
                     case 'o' ->{
+
                         if((o = pushbackReader.read()) == 'o'){
                             System.out.print('q');
                         }else {
