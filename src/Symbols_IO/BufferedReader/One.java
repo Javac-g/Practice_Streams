@@ -58,7 +58,7 @@ public class One {
                     }
                     default -> {
                         if(!marked){
-                            System.out.println((char) t);
+                            System.out.print((char) t);
                             break;
                         }
                     }
